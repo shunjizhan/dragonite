@@ -1,0 +1,12 @@
+{
+  "name": "dragonite",
+  "private": true,
+  "workspaces": [
+    "@dragonite/evm-utils",
+    "@dragonite/acala-utils"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+  }
+}
