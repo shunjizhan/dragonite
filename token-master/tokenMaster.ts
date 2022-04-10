@@ -29,14 +29,16 @@ const funcNames = [
 
 const targetTokens = [
   '0xB9dEDB74bd7b298aBf76b9dFbE5b62F0aB05a57b',
+  '0xDe2578Edec4669BA7F41c5d5D2386300bcEA4678',
 ];
 
 (async () => {
-  const blockNumber = (await eth_blockNumber()).data.result;
-  console.log({ blockNumber })
+  // const blockNumber = (await eth_blockNumber()).data.result;
 
   targetTokens.map(async addr => {
-    const tokenInfo = {};
+    const tokenInfo = {
+      address: addr, 
+    };
 
     const allP = funcNames.map(async f => {
       const data = iface.encodeFunctionData(f);
@@ -44,7 +46,7 @@ const targetTokens = [
       const res = await eth_call([{
         to: addr,
         data,
-      }, blockNumber]);
+      }, 'latest']);
 
       const decodedData = iface.decodeFunctionResult(f, res.data.result)[0];
 
