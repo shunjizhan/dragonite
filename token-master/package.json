@@ -1,0 +1,15 @@
+{
+  "name": "@dragonite/token-master",
+  "version": "1.0.0",
+  "description": "easily get all info about an erc20",
+  "main": "index.js",
+  "repository": "https://github.com/shunjizhan/dragonite/tree/main/token-master",
+  "license": "MIT",
+  "scripts": {
+    "ts-node": "TS_NODE_TRANSPILE_ONLY=true ts-node"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "ethers": "^5.6.2"
+  }
+}
