@@ -28,8 +28,9 @@ const funcNames = [
 ];
 
 const targetTokens = [
-  '0xB9dEDB74bd7b298aBf76b9dFbE5b62F0aB05a57b',
-  '0xDe2578Edec4669BA7F41c5d5D2386300bcEA4678',
+  '0xB9dEDB74bd7b298aBf76b9dFbE5b62F0aB05a57b',   // VERSA
+  '0xDe2578Edec4669BA7F41c5d5D2386300bcEA4678',   // ARSW
+  '0x6Df98E5fBfF3041105cB986B9D44c572a43Fcd22',   // NIKA
 ];
 
 (async () => {
